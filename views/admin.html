@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Low impact authentication via SMS</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="/style.css">
+  <script src="/client.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>
+      Low-impact authentication via SMS
+    </h1>
+  </header>
+
+  <main>
+    <h2>
+      Invite people to your application
+    </h2>
+
+    <form action="/invite">
+      <label>Phone number:
+        <input type="phone" id="phone" name="phone" autocomplete="phone" />
+      </label>
+
+      <label>Username (optional):
+        <input type="text" id="username" name="username" autocomplete="username" />
+      </label>
+
+      <input type="submit" value="Invite" id="invite_btn" />
+      <h3 id="feedback"></h3>
+    </form>
+
+  </main>
+
+</body>
+
+</html>
